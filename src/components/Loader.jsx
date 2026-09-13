@@ -1,4 +1,4 @@
-export default function Loader() {
+const Loader = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-3 py-24" role="status" aria-live="polite">
       <span className="h-10 w-10 animate-spin rounded-full border-4 border-border border-t-purple-500" />
@@ -6,3 +6,5 @@ export default function Loader() {
     </div>
   );
 }
+
+export default Loader;
