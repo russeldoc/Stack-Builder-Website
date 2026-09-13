@@ -33,12 +33,12 @@ export default function Navbar() {
         </button>
 
         {/* Logo: left on desktop, centered on mobile */}
-        <a href="#home" className="md:mr-auto">
+        <a href="#home">
           <img src={logo} alt="Dev Stack" className="h-7 w-auto" />
         </a>
 
         {/* Desktop nav links, centered */}
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-8 md:mx-auto md:flex">
           {NAV_LINKS.map((link) => (
             <a
               key={link.label}
