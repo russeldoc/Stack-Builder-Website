@@ -9,7 +9,7 @@ const NAV_LINKS = [
   { label: "Contact", href: "#contact" },
 ];
 
-export default function Navbar() {
+const Navbar= () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -86,4 +86,6 @@ export default function Navbar() {
       )}
     </header>
   );
-}
+};
+
+export default Navbar;
