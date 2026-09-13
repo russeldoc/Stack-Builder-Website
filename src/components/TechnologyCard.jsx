@@ -12,9 +12,10 @@ const BADGE_COLORS = {
   Modern: "bg-sky-50 text-sky-600",
   Containers: "bg-sky-50 text-sky-600",
   "Fast Build": "bg-orange-50 text-orange-600",
+  Orchestration: "bg-sky-50 text-sky-600",
 };
 
-export default function TechnologyCard({ tech, isAdded, onAdd }) {
+const TechnologyCard = ({ tech, isAdded, onAdd }) => {
   const badgeClass = BADGE_COLORS[tech.badge] ?? "bg-slate-100 text-slate-600";
 
   return (
@@ -58,3 +59,5 @@ export default function TechnologyCard({ tech, isAdded, onAdd }) {
     </article>
   );
 }
+
+export default TechnologyCard;
