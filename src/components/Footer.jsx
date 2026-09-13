@@ -26,7 +26,7 @@ const LINK_GROUPS = [
   },
 ];
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto grid max-w-[1280px] gap-10 px-5 pb-10 pt-14 sm:px-10 md:grid-cols-[1.6fr_1fr_1fr_1fr]">
@@ -65,4 +65,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

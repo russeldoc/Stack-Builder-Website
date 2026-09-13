@@ -1,6 +1,6 @@
 import banner from "../assets/banner-stack.png";
 
-export default function Hero() {
+const Hero = () => {
   return (
     <section id="home" className="px-5 pb-16 pt-16 sm:px-10 sm:pt-24">
       <div className="mx-auto grid max-w-[1280px] items-center gap-10 md:grid-cols-[1.1fr_0.9fr]">
@@ -10,10 +10,12 @@ export default function Hero() {
             <br />
             <span className="text-brand-gradient">Development Stack</span>
           </h1>
+
           <p className="mb-9 max-w-[46ch] text-base leading-relaxed text-ink-soft sm:text-lg">
             Explore frontend, backend, database, and tooling options, compare them side by side,
             and put together the stack that fits your next project.
           </p>
+
           <div className="flex flex-wrap gap-3.5">
             <a
               href="#technologies"
@@ -21,6 +23,7 @@ export default function Hero() {
             >
               Explore Technologies
             </a>
+
             <a
               href="#about"
               className="inline-flex items-center justify-center rounded-lg border border-border bg-white px-6 py-3 text-sm font-semibold text-ink hover:border-ink"
@@ -42,4 +45,6 @@ export default function Hero() {
       </div>
     </section>
   );
-}
+};
+
+export default Hero;
